@@ -2,7 +2,7 @@
 # Product-specific compile-time definitions.
 #
 
-IMX_DEVICE_PATH := device/ravion/imx6qp/sabreauto_6q
+IMX_DEVICE_PATH := device/ravion/imx6qp/ravion_6qp
 
 include $(IMX_DEVICE_PATH)/build_id.mk
 include device/ravion/imx6qp/BoardConfigCommon.mk
@@ -136,4 +136,4 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_USES_FULL_RECOVERY_IMAGE := true
 
 # define board type
-BOARD_TYPE := SABREAUTO
+BOARD_TYPE := RAVION

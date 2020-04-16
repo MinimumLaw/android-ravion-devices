@@ -27,4 +27,4 @@
 # Copied from build/target/product/AndroidProducts.mk
 
 PRODUCT_MAKEFILES := \
-  $(LOCAL_DIR)/ravion_6qp/ravion_6qp.mk \
+  $(LOCAL_DIR)/ravion6_qp/ravion_6qp.mk \

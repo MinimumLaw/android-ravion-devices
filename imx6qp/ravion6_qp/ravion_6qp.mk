@@ -1,17 +1,17 @@
 # This is a FSL Android Reference Design platform based on i.MX6Q ARD board
 # It will inherit from FSL core product which in turn inherit from Google generic
 
-IMX_DEVICE_PATH := device/ravion/imx6qp/ravion_6qp
+IMX_DEVICE_PATH := device/ravion/imx6qp/ravion6_qp
 
 -include device/ravion/common/imx_path/ImxPathConfig.mk
-$(call inherit-product, device/ravion/imx6dq/ProductConfigCommon.mk)
+$(call inherit-product, device/ravion/imx6qp/ProductConfigCommon.mk)
 $(call inherit-product, build/target/product/go_defaults.mk)
 
-ifneq ($(wildcard device/ravion/sabreauto_6dq/fstab_nand.freescale),)
+ifneq ($(wildcard device/ravion/ravion_6qp/fstab_nand.freescale),)
 $(shell touch $(IMX_DEVICE_PATH)/fstab_nand.freescale)
 endif
 
-ifneq ($(wildcard device/ravion/sabreauto_6dq/fstab.freescale),)
+ifneq ($(wildcard device/ravion/ravion_6qp/fstab.freescale),)
 $(shell touch $(IMX_DEVICE_PATH)/fstab.freescale)
 endif
 

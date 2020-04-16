@@ -39,7 +39,7 @@ on late-fs
 
 on early-boot
     # Set the host name which used in console
-    export HOSTNAME sabreauto_6q
+    export HOSTNAME ravion_6qp
 
     # Set permission for IIM node
     symlink /dev/mxs_viim /dev/mxc_mem
